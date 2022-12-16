@@ -197,7 +197,6 @@
   <ItemGroup>
     <Content Include="Content\icon_broken.svg" />
     <Content Include="Content\logo.svg" />
-    <Content Include="Content\logo_uon.svg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
