@@ -39,7 +39,7 @@ namespace UrlShortenerApi.Business.Services
 
                 token = token.Substring(start, length);
 
-                isValid = !DbContext.ShortLinks.Any(s => s.Token == token);
+                isValid = !DbContext.ShortLinks.Any(s => s.Token == token) && Words.BadWords.All(w=>!token.Contains(w));
             }
 
             return token;

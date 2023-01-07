@@ -281,6 +281,7 @@
     <Compile Include="Utilities\Settings.cs" />
     <Compile Include="Utilities\UrlValidator\UrlValidator.cs" />
     <Compile Include="Utilities\UrlValidator\UrlValidationModel.cs" />
+    <Compile Include="Utilities\Words.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\logo.svg" />
