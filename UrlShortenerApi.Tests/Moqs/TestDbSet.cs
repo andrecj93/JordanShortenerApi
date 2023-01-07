@@ -6,8 +6,7 @@ using System.Linq;
 
 namespace UrlShortenerApi.Tests.Moqs
 {
-    public class TestDbSet<T> : DbSet<T>, IQueryable, IEnumerable<T>
-         where T : class
+    public class TestDbSet<T> : DbSet<T>, IQueryable, IEnumerable<T> where T : class
     {
         readonly ObservableCollection<T> _data;
         readonly IQueryable _query;

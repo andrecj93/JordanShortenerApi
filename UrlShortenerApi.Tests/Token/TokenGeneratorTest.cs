@@ -44,7 +44,7 @@ namespace UrlShortenerApi.Tests.Token
             Assert.That(dictionary.Count == count);
         }
 
-        public static string GenerateToken(Random random, int minLength, int maxLength)
+        private static string GenerateToken(Random random, int minLength, int maxLength)
         {
             string token = string.Empty;
 

@@ -283,10 +283,11 @@
     <Compile Include="Utilities\UrlValidator\UrlValidationModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\icon_broken.svg" />
     <Content Include="Content\logo.svg" />
-    <Content Include="favicon.ico" />
+    <Content Include="Content\icon_broken.svg" />
+    <Content Include="Content\logo2.svg" />
     <Content Include="Global.asax" />
+    <Content Include="favicon.ico" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -303,6 +304,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".config\dotnet-tools.json" />
     <None Include="packages.config" />
     <Content Include="Views\Url\Index.cshtml" />
     <Content Include="Views\Shared\Error500.cshtml" />

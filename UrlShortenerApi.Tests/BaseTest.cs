@@ -14,11 +14,14 @@ namespace UrlShortenerApi.Tests
 
         protected void MoqIdentity(ShortLinkController shortLinkController)
         {
-            var user = new ClaimsPrincipal(new ClaimsIdentity(
-                            new Claim[] {
-                    new Claim(ClaimTypes.NameIdentifier, "1"),
-                    new Claim(ClaimTypes.Name, "admin")
-                            }, "Bearer"));
+            var claims = new Claim[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, "1"),
+                new Claim(ClaimTypes.Name, "admin")
+            };
+
+            var identity = new ClaimsIdentity(claims, "Basic");
+            var user = new ClaimsPrincipal(identity);
 
             shortLinkController.User = user;
         }
